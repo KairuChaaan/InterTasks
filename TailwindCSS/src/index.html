@@ -12,10 +12,14 @@
           <!-- change the brand name to your name -->
           <a href="#" class="text-slate-50 text-2xl font-semibold">BrandName</a>
           <ul class="flex items center gap-4">
-            <li class="text-slate-50 text-base font-medium hover:text-neutral-700 hover:duration-300">
+            <li
+              class="text-slate-50 text-base font-medium hover:text-neutral-700 hover:duration-300"
+            >
               <a href="#">Home</a>
             </li>
-            <li class="text-slate-50 text-base flex gap-2 items-center hover:text-neutral-700 hover:duration-300">
+            <li
+              class="text-slate-50 text-base flex gap-2 items-center hover:text-neutral-700 hover:duration-300"
+            >
               <a href="#">Shop</a>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -32,27 +36,45 @@
                 />
               </svg>
             </li>
-            <li class="text-slate-50 text-base font-medium hover:text-neutral-700 hover:duration-300">
+            <li
+              class="text-slate-50 text-base font-medium hover:text-neutral-700 hover:duration-300"
+            >
               <a href="#">About</a>
             </li>
-            <li class="text-slate-50 text-base font-medium hover:text-neutral-700 hover:duration-300">
+            <li
+              class="text-slate-50 text-base font-medium hover:text-neutral-700 hover:duration-300"
+            >
               <a href="#">Blog</a>
             </li>
-            <li class="text-slate-50 text-base font-medium hover:text-neutral-700 hover:duration-300">
+            <li
+              class="text-slate-50 text-base font-medium hover:text-neutral-700 hover:duration-300"
+            >
               <a href="#">Contact</a>
             </li>
-            <li class="text-slate-50 text-base font-medium hover:text-neutral-700 hover:duration-300">
+            <li
+              class="text-slate-50 text-base font-medium hover:text-neutral-700 hover:duration-300"
+            >
               <a href="#">Pages</a>
             </li>
           </ul>
         </div>
-        <div class="flex gap-1 items-center ml-auto ">
-          <a href="#" class="text-slate-50 text-base font-medium hover:text-neutral-700 hover:duration-300">Login</a>
+        <div class="flex gap-1 items-center ml-auto">
+          <a
+            href="#"
+            class="text-slate-50 text-base font-medium hover:text-neutral-700 hover:duration-300"
+            >Login</a
+          >
           <span class="text-slate-50">&#47;</span>
-          <a href="#" class="text-slate-50 text-base font-medium hover:text-neutral-700 hover:duration-300">Register</a>
+          <a
+            href="#"
+            class="text-slate-50 text-base font-medium hover:text-neutral-700 hover:duration-300"
+            >Register</a
+          >
         </div>
       </nav>
-
+    </header>
+    
+    <main>   
       <!-- you can use different images if you want to -->
       <section class="section_images py-16">
         <!-- i manipulated the grid-cols to set the first column to have to occupy 70% of the of its width (not the parent) 
@@ -104,13 +126,13 @@
                 >
               </div>
             </div>
-
+  
             <!-- I set a 100% height here [h-full] because the images weren't occupying the whole box as i expected it to do even if they have 100% height
             i noticed that this grid container is part of the flex-box container and that's what was causing the problem, so i had to set this grid 
             container to 100% height so that the images will inherit the height of this grid container. 
             ( you can test that by removing the h-full or maybe changing the height to whatever you want such as h-[400px] 
               but the image will not go lower than the actual its height even if you lower it to 10px)
-
+  
             if you want me to explain more about inheritance among parent and children elements then you can 
             just ping me in discord or any topics that you want me to explain :D
             -->
@@ -155,6 +177,6 @@
           </div>
         </div>
       </section>
-    </header>
+    </main>
   </body>
 </html>
