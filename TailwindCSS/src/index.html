@@ -92,7 +92,7 @@
             <div class="absolute top-7 left-7 flex flex-col gap-3">
               <!-- I mostly use span for 1-5 words or a short sentence or subheading instead of <p>[since this is for long texts] -->
               <span class="text-sm font-bold text-green-500">5 items</span>
-              <!-- I knew that this was a title based from the image so I have to use h2 [use heading tags for titles] -->
+              <!-- This is a title so I have to use h2 [use heading tags for titles, h1-h6] -->
               <h2 class="uppercase text-3xl font-bold text-neutral-800">
                 Furniture
               </h2>
@@ -127,7 +127,7 @@
             i noticed that this grid container is part of the flex-box container and that's what was causing the problem, so i had to set this grid 
             container to 100% height so that the images will inherit the height of this grid container. 
             ( you can test that by removing the h-full or maybe changing the height to whatever you want such as h-[400px] 
-              but the image will not go lower than the actual its height even if you lower it to 10px)
+              but the image will not go lower than its ACTUAL height even if you lower it to 10px)
   
             if you want me to explain more about inheritance among parent and children elements then you can 
             just ping me in discord or any topics that you want me to explain :D
