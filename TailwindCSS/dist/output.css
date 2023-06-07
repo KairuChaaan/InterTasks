@@ -428,6 +428,22 @@ html {
 
 /* this is an example of styling in your css file while still using tailwind css */
 
+.section-example {
+  margin-top: 1.25rem;
+  margin-bottom: 1.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  --tw-bg-opacity: 1;
+  background-color: rgb(216 180 254 / var(--tw-bg-opacity));
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  /* you can even combine normal css properties here BUT you cannot apply tailwind classes here, only with @apply*/
+  position: relative;
+  font-weight: 600;
+  color: #f7f7f7;
+}
+
 *, ::before, ::after {
   --tw-border-spacing-x: 0;
   --tw-border-spacing-y: 0;
@@ -528,44 +544,6 @@ html {
   --tw-backdrop-sepia:  ;
 }
 
-.container {
-  width: 100%;
-}
-
-@media (min-width: 640px) {
-  .container {
-    max-width: 640px;
-  }
-}
-
-@media (min-width: 768px) {
-  .container {
-    max-width: 768px;
-  }
-}
-
-@media (min-width: 1024px) {
-  .container {
-    max-width: 1024px;
-  }
-}
-
-@media (min-width: 1280px) {
-  .container {
-    max-width: 1280px;
-  }
-}
-
-@media (min-width: 1536px) {
-  .container {
-    max-width: 1536px;
-  }
-}
-
-.invisible {
-  visibility: hidden;
-}
-
 .fixed {
   position: fixed;
 }
@@ -578,28 +556,20 @@ html {
   position: relative;
 }
 
-.sticky {
-  position: sticky;
-}
-
 .left-7 {
   left: 1.75rem;
-}
-
-.top-7 {
-  top: 1.75rem;
 }
 
 .top-0 {
   top: 0px;
 }
 
-.top-6 {
-  top: 1.5rem;
-}
-
 .top-5 {
   top: 1.25rem;
+}
+
+.top-7 {
+  top: 1.75rem;
 }
 
 .z-30 {
@@ -631,10 +601,6 @@ html {
   display: none;
 }
 
-.h-16 {
-  height: 4rem;
-}
-
 .h-3 {
   height: 0.75rem;
 }
@@ -649,18 +615,6 @@ html {
 
 .h-full {
   height: 100%;
-}
-
-.h-auto {
-  height: auto;
-}
-
-.h-\[110\%\] {
-  height: 110%;
-}
-
-.h-\[140\%\] {
-  height: 140%;
 }
 
 .w-3 {
@@ -679,28 +633,12 @@ html {
   width: 100%;
 }
 
-.w-\[\] {
-  width: ;
-}
-
-.w-\[110\%\] {
-  width: 110%;
-}
-
-.w-\[200px\] {
-  width: 200px;
-}
-
 .max-w-5xl {
   max-width: 64rem;
 }
 
 .grid-cols-1 {
   grid-template-columns: repeat(1, minmax(0, 1fr));
-}
-
-.grid-cols-\[0\.7fr_minmax\(0px\2c 1fr\)\] {
-  grid-template-columns: 0.7fr minmax(0px,1fr);
 }
 
 .flex-row {
@@ -721,10 +659,6 @@ html {
 
 .justify-center {
   justify-content: center;
-}
-
-.justify-between {
-  justify-content: space-between;
 }
 
 .gap-1 {
@@ -766,19 +700,9 @@ html {
   padding-right: 2.5rem;
 }
 
-.py-16 {
-  padding-top: 4rem;
-  padding-bottom: 4rem;
-}
-
-.py-3 {
-  padding-top: 0.75rem;
-  padding-bottom: 0.75rem;
-}
-
-.py-4 {
-  padding-top: 1rem;
-  padding-bottom: 1rem;
+.px-8 {
+  padding-left: 2rem;
+  padding-right: 2rem;
 }
 
 .py-24 {
@@ -786,9 +710,9 @@ html {
   padding-bottom: 6rem;
 }
 
-.px-8 {
-  padding-left: 2rem;
-  padding-right: 2rem;
+.py-4 {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 
 .text-2xl {
@@ -851,28 +775,6 @@ html {
   text-underline-offset: 4px;
 }
 
-.transition {
-  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
-  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
-  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 150ms;
-}
-
-.transition-all {
-  transition-property: all;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 150ms;
-}
-
-.duration-300 {
-  transition-duration: 300ms;
-}
-
-.duration-200 {
-  transition-duration: 200ms;
-}
-
 /* this is an import i got from google fonts, instead of the link i got the import instead */
 
 /* layer base is another customization option for you in tailwind, 
@@ -896,10 +798,6 @@ you can customize your code here only if you cannot do it through tailwind class
     top: 1.75rem;
   }
 
-  .sm\:w-full {
-    width: 100%;
-  }
-
   .sm\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
@@ -920,10 +818,6 @@ you can customize your code here only if you cannot do it through tailwind class
 }
 
 @media (min-width: 768px) {
-  .md\:visible {
-    visibility: visible;
-  }
-
   .md\:block {
     display: block;
   }
@@ -946,10 +840,6 @@ you can customize your code here only if you cannot do it through tailwind class
 
   .md\:items-center {
     align-items: center;
-  }
-
-  .md\:justify-normal {
-    justify-content: normal;
   }
 
   .md\:gap-4 {

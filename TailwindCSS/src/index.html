@@ -17,7 +17,9 @@
             <!-- I set the flex direction to flex-row on md: this applies to > 768px and the flex-col which applies to < 768px screens -->
             <!-- with flex direction you can manipulate the direction of your flex items, horizontal or vertical flex -->
             <!-- see how you can apply multiple resposive designs in just one line compared to doing media queries in CSS -->
-            <ul  class="flex md:flex-row flex-col md:py-0 py-4 gap-3 items-start md:items-center md:gap-4">
+            <ul
+              class="flex md:flex-row flex-col md:py-0 py-4 gap-3 items-start md:items-center md:gap-4"
+            >
               <li
                 class="text-slate-50 text-base font-medium hover:text-neutral-700 hover:duration-300"
               >
@@ -93,7 +95,7 @@
 
     <main>
       <section class="section_images py-24">
-       <!-- applied md: here -->
+        <!-- applied md: here -->
         <div
           class="px-8 grid max-w-5xl mx-auto grid-cols-1 md:grid-cols-[0.7fr_minmax(0px,1fr)] gap-4 sm:gap-3"
         >
@@ -123,9 +125,13 @@
                 class="w-full h-full object-cover"
               />
               <!-- applied sm:  -->
-              <div class="absolute top-5 sm:top-7 left-7 flex flex-col gap-2 sm:gap-3">
+              <div
+                class="absolute top-5 sm:top-7 left-7 flex flex-col gap-2 sm:gap-3"
+              >
                 <span class="text-sm font-bold text-green-500">5 items</span>
-                <h2 class="uppercase sm:text-3xl md:text-2xl text-xl font-bold text-neutral-800">
+                <h2
+                  class="uppercase sm:text-3xl md:text-2xl text-xl font-bold text-neutral-800"
+                >
                   Furniture
                 </h2>
                 <a
@@ -145,7 +151,9 @@
                 />
                 <div class="absolute top-7 left-7 flex flex-col gap-3">
                   <span class="text-sm font-bold text-green-500">5 items</span>
-                  <h2 class="uppercase text-xl sm:text-2xl font-bold text-neutral-800">
+                  <h2
+                    class="uppercase text-xl sm:text-2xl font-bold text-neutral-800"
+                  >
                     Furniture
                   </h2>
                   <a
@@ -163,7 +171,9 @@
                 />
                 <div class="absolute top-7 left-7 flex flex-col gap-3">
                   <span class="text-sm font-bold text-green-500">5 items</span>
-                  <h2 class="uppercase text-xl sm:text-2xl font-bold text-neutral-800">
+                  <h2
+                    class="uppercase text-xl sm:text-2xl font-bold text-neutral-800"
+                  >
                     Furniture
                   </h2>
                   <a
@@ -178,9 +188,12 @@
         </div>
       </section>
 
+      <!-- you can delete or not, up to you -->
+      <section class="section-example">
+        <span>THIS IS AN EXAMPLE</span>
+      </section>
 
       <!-- CREATE A NEW SECTION HERE FOR YOUR DAY 4 TASK -->
-      
     </main>
     <script src="./main.js"></script>
   </body>
