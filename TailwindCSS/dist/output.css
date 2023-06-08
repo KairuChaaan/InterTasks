@@ -1104,12 +1104,20 @@ you can customize your code here only if you cannot do it through tailwind class
     display: flex;
   }
 
+  .md\:grid {
+    display: grid;
+  }
+
   .md\:hidden {
     display: none;
   }
 
   .md\:grid-cols-\[0\.7fr_minmax\(0px\2c 1fr\)\] {
     grid-template-columns: 0.7fr minmax(0px,1fr);
+  }
+
+  .md\:grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   .md\:flex-row {
