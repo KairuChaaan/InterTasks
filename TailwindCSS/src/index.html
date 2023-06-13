@@ -7,13 +7,38 @@
   </head>
   <body>
     <main>
+      <!-- RELATIVE AND ABSOLUTE -->
       <section class="mx-auto py-32">
-        <div class="relative w-[400px] h-[300px] bg-neutral-700 mx-auto flex gap-5 items-center justify-center">
+        <div
+          class="relative w-[400px] h-[300px] bg-neutral-700 mx-auto flex gap-5 items-center justify-center"
+        >
           <div class="w-12 h-12 bg-yellow-600">
             <div class="w-6 h-6 rounded-full bg-pink-300"></div>
           </div>
           <div class="w-12 h-10 bg-red-400"></div>
           <div class="w-9 h-6 bg-green-700"></div>
+        </div>
+      </section>
+
+      <!-- OVERFLOW HIDDEN -->
+      <section class="mx-auto py-20">
+        <div
+          class="relative w-[400px] h-[300px] bg-neutral-500 mx-auto flex gap-5 items-center justify-center"
+        >
+          <div class="w-20 h-20 bg-neutral-900">
+            <div
+              class="w-12 h-12 rounded-full bg-blue-500 -translate-y-1/2 -translate-x-3"
+            ></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- PERCENTAGES, PIXELS AND MAX-W -->
+      <section class="mx-auto py-20">
+        <div
+          class="relative max-w-[500px] h-[60%] bg-neutral-500 mx-auto flex gap-5 items-center justify-center"
+        >
+          <img src="./assets/images/item1.jpg" alt="" class="text-center w-1/2">
         </div>
       </section>
     </main>
